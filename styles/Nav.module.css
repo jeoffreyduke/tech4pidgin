@@ -15,6 +15,7 @@
   position: absolute;
   top: 1.19rem;
   left: 0.5rem;
+  cursor: pointer;
 }
 
 .logoDivider {
