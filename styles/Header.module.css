@@ -1,46 +1,44 @@
 .Header {
-  display: grid;
+  position: fixed;
+  top: 0;
+  left: 1rem;
   place-items: center;
   height: 3.5rem;
-  width: 100vw;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 1px solid #000;
+  z-index: 5;
 }
 
 .headerCon {
   display: flex;
   justify-content: space-between;
   position: relative;
-  right: 3.5rem;
   height: inherit;
-}
-
-.logo {
-  position: relative;
-  right: 21.5rem;
-  top: 0.2rem;
 }
 
 .search {
   position: relative;
   top: 0.35rem;
+  left: 35rem;
 }
 
 .search > input {
   height: 2.1rem;
-  width: 30rem;
+  width: 15rem;
   position: relative;
   top: 0.2rem;
-  color: #494949;
-  background-color: transparent;
+  color: #6d6c6c;
+  background-color: rgba(10, 10, 10, 0.808);
   padding: 0.5rem;
   outline: none;
-  border: 1px #000 solid;
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
+  border: none;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .search > input::placeholder {
-  color: #494949;
+  color: #777;
 }
 
 .search > button {
@@ -49,16 +47,15 @@
   position: relative;
   top: 0.35rem;
   color: #fff;
-  background-color: #000;
+  background-color: rgba(10, 10, 10, 0.808);
   border: none;
-  border-top-right-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .profile {
   position: relative;
   top: 1.2rem;
-  left: 29rem;
   display: flex;
   justify-content: space-between;
   width: 8rem;
