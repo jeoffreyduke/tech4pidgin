@@ -6,7 +6,22 @@ import Carousel from "./Carousel";
 const Homecomp = () => {
   return (
     <div className={styles.Homecomp}>
-      <section>
+      <div className={styles.carouselHeaders}>
+        Top courses in Web Development
+      </div>
+      <section className={styles.first}>
+        <Carousel />
+      </section>
+
+      <div className={styles.carouselHeaders}>Top courses in Web Design</div>
+      <section className={styles.first}>
+        <Carousel />
+      </section>
+
+      <div className={styles.carouselHeaders}>
+        Top courses in IT and Software
+      </div>
+      <section className={styles.first}>
         <Carousel />
       </section>
     </div>

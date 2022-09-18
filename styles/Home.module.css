@@ -11,3 +11,22 @@
   margin-top: 3.5rem;
   margin-left: 5vw;
 }
+
+.Homecomp {
+  padding-top: 4rem;
+}
+
+.carouselHeaders {
+  padding-left: 15rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.first {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}

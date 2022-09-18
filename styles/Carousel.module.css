@@ -1,5 +1,82 @@
 .Carousel {
-  width: 100%;
+  width: 70vw;
   height: 20rem;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.item {
+  height: 19rem;
+  width: 14rem;
+  background-color: rgb(22, 22, 22);
+  padding: 1rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgb(33, 33, 33);
+  transition: all 0.3s ease-in-out;
+}
+
+.image {
+  height: 9.5rem;
+  background-image: url("/assets/pageImages/header.jpg");
+  background-size: cover;
+  border-radius: 0.35rem;
+}
+
+.price,
+.title {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.tutor {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.rating,
+.price,
+.title,
+.tutor {
+  margin-top: 0.5rem;
+}
+
+.addToFavs {
+  position: relative;
+  bottom: 3rem;
+  left: 9rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  width: 3rem;
+  background-color: var(--theme);
+  color: rgb(22, 22, 22);
+  border-radius: 2rem;
+  box-shadow: rgb(0, 0, 0) 0px 10px 15px;
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: rgb(22, 22, 22);
+  color: var(--theme);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: var(--theme);
+  color: rgb(22, 22, 22);
+  transition: all 0.3s ease-in-out;
 }
