@@ -1,15 +1,21 @@
 .Carousel {
-  width: 70vw;
-  height: 20rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 62vw;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.CarouselCon {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
 }
 
 .item {
   height: 19rem;
-  width: 14rem;
+  min-width: 14rem;
   background-color: rgb(22, 22, 22);
   padding: 1rem;
   border-radius: 0.35rem;
@@ -46,11 +52,22 @@
   margin-top: 0.5rem;
 }
 
+/*@keyframes lift {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-0.5rem);
+    opacity: 1;
+  }
+}*/
+
 .addToFavs {
   position: relative;
   bottom: 3rem;
   left: 9rem;
-  display: flex;
+  display: none;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -59,20 +76,28 @@
   background-color: var(--theme);
   color: rgb(22, 22, 22);
   border-radius: 2rem;
-  box-shadow: rgb(0, 0, 0) 0px 10px 15px;
+  box-shadow: rgb(0, 0, 0) 0px 7px 15px;
   cursor: pointer;
+  /*animation: lift 0.4s ease-in-out;*/
+}
+
+.hideADF {
+  display: none;
 }
 
 .arrow {
+  height: 3rem;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  right: 0rem;
   padding: 0.8rem;
-  background-color: rgb(22, 22, 22);
+  background-color: var(--bgSec);
   color: var(--theme);
   border-radius: 2rem;
   cursor: pointer;
+  z-index: 1;
 }
 
 .arrow:hover {

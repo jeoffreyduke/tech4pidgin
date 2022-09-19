@@ -2,19 +2,22 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 6rem;
+  padding-top: 8rem;
+  padding-left: 2.5rem;
   display: flex;
+  flex-direction: column;
   width: 5rem;
   height: 100vh;
   background-color: var(--bgThird);
   grid-area: nav;
+  overflow-x: hidden;
   z-index: 6;
 }
 
 .logo {
   position: absolute;
   top: 1.19rem;
-  left: 0.5rem;
+  left: 0.65rem;
   cursor: pointer;
 }
 
@@ -27,7 +30,21 @@
   background-color: var(--bg);
 }
 
-.nav > ul > li {
+.menuItem {
+  display: flex;
+  cursor: pointer;
+}
+
+.menuLabel {
+  display: flex;
+  position: relative;
+  top: 0.85rem;
+  right: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.icon {
   display: flex;
   position: relative;
   right: 1.5rem;
@@ -39,7 +56,6 @@
   color: var(--theme);
   border-radius: 2rem;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 
 .divider {

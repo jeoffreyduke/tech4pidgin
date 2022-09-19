@@ -13,11 +13,33 @@
 }
 
 .Homecomp {
-  padding-top: 4rem;
+  padding-top: 3rem;
+}
+
+.head {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+}
+
+.headCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62vw;
+  height: 18rem;
+  background-image: url("/assets/pageImages/header.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  margin-left: 15.5rem;
+  border-radius: 1rem;
+  box-shadow: rgb(0, 0, 0) 0px 7px 15px;
 }
 
 .carouselHeaders {
-  padding-left: 15rem;
+  padding-left: 16.5rem;
   padding-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 500;

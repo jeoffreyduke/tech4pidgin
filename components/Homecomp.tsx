@@ -6,6 +6,11 @@ import Carousel from "./Carousel";
 const Homecomp = () => {
   return (
     <div className={styles.Homecomp}>
+      <div className={styles.headCon}>
+        <div className={styles.head}>You sure say you wan be tech bro?</div>
+        <div className={styles.headCarousel} />
+      </div>
+
       <div className={styles.carouselHeaders}>
         Top courses in Web Development
       </div>
